@@ -1,0 +1,28 @@
+{
+    "name": "letsco-themes/smash-campus",
+    "description": "Smash campus theme",
+    "type": "silverstripe-theme",
+    "keywords": [
+        "silverstripe",
+        "theme"
+    ],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Auriane Chay",
+            "homepage": "https://letsco.co"
+        }
+    ],
+    "require": {
+        "composer/installers": "*",
+        "silverstripe/framework": ">=5"
+    },
+    "extra": {
+        "expose": [
+            "css",
+            "images",
+            "javascript",
+            "webfonts"
+        ]
+    }
+}
