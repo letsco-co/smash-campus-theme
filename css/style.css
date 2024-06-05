@@ -1,3 +1,10 @@
+/*Overriding Bootstrap CSS*/
+h3,.h3 {
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+/* Custom CSS*/
 .gradient {
     background: linear-gradient(180deg, rgba(141,220,191,1) 0%, rgba(27,173,202,1) 100%);
 }
@@ -28,4 +35,8 @@
     top: 0;
     right: 50%;
     transform: translateX(50%);
+}
+
+.bg-primary-hover:hover {
+    background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;
 }
