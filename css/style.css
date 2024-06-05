@@ -1,0 +1,31 @@
+.gradient {
+    background: linear-gradient(180deg, rgba(141,220,191,1) 0%, rgba(27,173,202,1) 100%);
+}
+
+.delimiter {
+    position: relative;
+}
+
+.delimiter:before {
+    content: "";
+    background-image: url('../images/arrow.png');
+    width: 91.5%;
+    height: 12px;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    position: absolute;
+    top: -5px;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.delimiter:after {
+    content: "";
+    background: black;
+    width: 90%;
+    height: 1px;
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translateX(50%);
+}
