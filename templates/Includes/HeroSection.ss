@@ -6,12 +6,12 @@
         background-size: cover;
     }
 </style>
-<section style="height: 435px" class="bg-img-gradient d-flex flex-column justify-content-center px-sm-5 mb-2">
+<section style="min-height: 435px" class="bg-img-gradient d-flex flex-column justify-content-center px-sm-5 mb-2">
     <h1>$Title</h1>
-    <% if $Categories %>
-        <div class="d-md-flex flex-wrap d-none">
+    <% if $Categories && $DisplayCategories %>
+        <div class="d-md-flex flex-wrap d-none gap-3">
             <% loop $Categories %>
-                <a href="$Link" class="bg-white bg-primary-hover text-black p-2 my-2 rounded-2 link-underline-opacity-0 link-offset-2 link-underline <% if $FirstLast != "first" %>mx-2<% end_if %>">$Title</a>
+                <a href="$Link" class="bg-white bg-primary-hover text-black p-2 my-2 rounded-2 link-underline-opacity-0 link-offset-2 link-underline">$Title</a>
             <% end_loop %>
         </div>
         <div class="dropdown-center d-block d-md-none">
@@ -26,5 +26,8 @@
                 <% end_loop %>
             </ul>
         </div>
+    <% end_if %>
+    <% if $Category && $DisplayDescription %>
+        <p>$Category.Description</p>
     <% end_if %>
 </section>
