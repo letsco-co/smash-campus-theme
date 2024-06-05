@@ -66,7 +66,7 @@
         <div class="row justify-content-center py-4">
             <img class="col-11 col-md-6 col-lg-3" src="$resourceURL('themes/smash-campus/images/qualiopi.png')" alt="Qualiopi processus certifié, La certification Qualiopi a été délivrée au titre des categories d'actions suivantes: actions de formations; actions permettant de valider les acquis de l'expérience. République française">
         </div>
-        <div class="row justify-content-center py-3 text-center delimiter">
+        <div class="row justify-content-center py-3 text-center delimiter delimiter-center">
             <p class="col-11 mb-0">@$getCurrentYear SMASH Campus | Conçu et réalisé par <a class="link-dark" href="https://letsco.co" target="_blank">Let’s Co</a></p>
         </div>
     </div>
