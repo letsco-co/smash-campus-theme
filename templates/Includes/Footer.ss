@@ -1,7 +1,7 @@
 <footer class="py-5 px-lg-5 gradient">
     <div>
-        <div class="row align-items-start">
-            <div class="col">
+        <div class="row justify-content-center align-items-md-start">
+            <div class="col-11 col-md-4 py-sm-3">
                 <p class="h3">Informations pratiques</p>
                 <ul class="list-group list-group-flush bg-transparent">
                     <li class="list-group-item bg-transparent border-0 ps-0">
@@ -18,7 +18,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col">
+            <div class="col-11 col-md-4 py-sm-3">
                 <p class="h3">Restons en contact</p>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item bg-transparent border-0 ps-0">
@@ -51,7 +51,7 @@
                     <% end_if %>
                 </ul>
             </div>
-            <div class="col">
+            <div class="col-11 col-md-4 py-sm-3">
                 <p class="h3">Inscrivez-vous à la newsletter</p>
                 <p class="h3">rejoignez-nous</p>
                 <% if $SiteConfig.LinkedInLink %>
@@ -64,10 +64,10 @@
             </div>
         </div>
         <div class="row justify-content-center py-4">
-            <img class="col-3" src="$resourceURL('themes/smash-campus/images/qualiopi.png')" alt="Qualiopi processus certifié, La certification Qualiopi a été délivrée au titre des categories d'actions suivantes: actions de formations; actions permettant de valider les acquis de l'expérience. République française">
+            <img class="col-11 col-md-6 col-lg-3" src="$resourceURL('themes/smash-campus/images/qualiopi.png')" alt="Qualiopi processus certifié, La certification Qualiopi a été délivrée au titre des categories d'actions suivantes: actions de formations; actions permettant de valider les acquis de l'expérience. République française">
         </div>
         <div class="row justify-content-center py-3 text-center delimiter">
-            <p class="col mb-0">@$getCurrentYear SMASH Campus | Conçu et réalisé par <a class="link-dark" href="https://letsco.co" target="_blank">Let’s Co</a></p>
+            <p class="col-11 mb-0">@$getCurrentYear SMASH Campus | Conçu et réalisé par <a class="link-dark" href="https://letsco.co" target="_blank">Let’s Co</a></p>
         </div>
     </div>
 </footer>
