@@ -1,5 +1,5 @@
-<header>
-    <nav class="navbar navbar-expand-lg bg-white py-3 px-lg-5">
+<header class="sticky-top">
+    <nav class="navbar navbar-expand-lg bg-white py-3 px-3 px-md-10">
         <div class="container-fluid ">
             <a class="navbar-brand" href="$BaseHref">
                 <img src="$resourceURL('themes/smash-campus/images/logo.png')" alt="SMASH Campus">

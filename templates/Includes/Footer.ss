@@ -1,4 +1,4 @@
-<footer class="py-5 px-lg-5 gradient">
+<footer class="py-5 px-3 px-md-10 gradient">
     <div>
         <div class="row justify-content-center align-items-md-start">
             <div class="col-11 col-md-4 py-sm-3">
