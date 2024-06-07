@@ -1,4 +1,4 @@
-<div id="$HolderID" class="field">
+<div id="$HolderID" class="field my-3">
     <% if $Title %><label class="left" for="$ID">$Title<% if $Required %><span class="text-danger">*</span><% end_if %></label><% end_if %>
     <div class="middleColumn">
         $Field

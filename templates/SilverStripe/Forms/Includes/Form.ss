@@ -7,7 +7,7 @@
 	<p id="{$FormName}_error" class="message $MessageType" style="display: none"></p>
 	<% end_if %>
 
-	<fieldset>
+	<fieldset class="my-4">
 		<% if $Legend %><legend>$Legend</legend><% end_if %>
 		<% loop $Fields %>
 			$FieldHolder
@@ -16,7 +16,7 @@
 	</fieldset>
 
 	<% if $Actions %>
-	<div class="row m-auto">
+	<div class="d-flex flex-wrap justify-content-between">
 		<% loop $Actions %>
 			$Field
 		<% end_loop %>
