@@ -10,8 +10,24 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <% loop $Menu(1) %>
-                        <li class="nav-item mx-2">
-                            <a class="<% if $LinkingMode == "current" %>active<% end_if %> <% if $FirstLast == "last" %>bg-primary rounded-1 text-black bg-secondary-hover<% end_if %> px-2 nav-link" href="$Link" title="$Title.XML">$MenuTitle.XML</a>
+                        <li class="nav-item mx-2 <% if $Children %>dropdown<% end_if %>">
+                            <a class="
+                                <% if $LinkingMode == "current" %>active<% end_if %>
+                                <% if $FirstLast == "last" %>bg-primary rounded-1 text-black bg-secondary-hover<% end_if %>
+                                px-2 nav-link
+                                <% if $Children %>dropdown-toggle<% end_if %>
+                                "
+                               href="$Link"
+                               title="$Title.XML"
+                               <% if $Children %>
+                               role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                               <% end_if %>
+                            >$MenuTitle.XML</a>
+                            <ul class="dropdown-menu dropdown-menu-end bg-white">
+                                <% loop $Children %>
+                                    <li><a class="dropdown-item <% if $LinkingMode == "current" %>active<% end_if %>" href="$Link">$Title</a></li>
+                                <% end_loop %>
+                            </ul>
                         </li>
                     <% end_loop %>
                 </ul>
