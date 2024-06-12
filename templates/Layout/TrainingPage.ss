@@ -5,10 +5,11 @@
             <h2>Pré-inscription</h2>
             <div>
                 <% if $Up.Form %>
+                    <% with $Up.Form %> <% include MultiFormProgressNumber %> <% end_with %>
                     $Up.Form
                 <% else_if $Up.Completed %>
                     <h3>Votre demande de pré-inscription a bien été prise en compte</h3>
-                    <p>Merci de l’intérêt que vous portez à notre formation. Vous allez recevoir une mail confirmant votre demande. Nous vous recontacterons prochainement pour plus de détails.</p>
+                    <p>Merci de l’intérêt que vous portez à notre formation. Vous allez recevoir un mail confirmant votre demande. Nous vous recontacterons prochainement pour plus de détails.</p>
                 <% else %>
                     <p>Je souhaite me former avec une prise en charge :</p>
                     <div class="d-flex flex-column">

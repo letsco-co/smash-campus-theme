@@ -116,3 +116,6 @@ aside.sticky-md-top {
     bottom: -5px;
     right: 19.5%;
 }
+.stepIndicator li:not(.current) {
+    color: var(--bs-secondary-color);
+}
