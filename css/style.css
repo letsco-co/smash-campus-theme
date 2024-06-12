@@ -11,6 +11,9 @@ h2,.h2 {
     font-size: 1.8rem;
 }
 /* Custom CSS*/
+aside.sticky-md-top {
+    z-index: 1015 !important;
+}
 .gradient {
     background: linear-gradient(180deg, rgba(141,220,191,1) 0%, rgba(27,173,202,1) 100%);
 }
@@ -111,5 +114,5 @@ h2,.h2 {
     position: absolute;
     width: 16px;
     bottom: -5px;
-    right: 200px;
+    right: 19.5%;
 }
