@@ -12,10 +12,19 @@
                 </h2>
             <% end_if %>
             <div>
-                <% if $Up.Completed %>
+                <% if not $Up.Completed && not $Up.InvitationCompleted %>
+                    <% with $Up.Form %>
+                        <% include MultiFormProgressGuests %>
+                    <% end_with %>
+                <% end_if %>
+                <% if $Up.InvitationCompleted %>
+                    <p>Vos invitations ont bien été prises en compte. Chacune de ces personnes recevront un mail d’invitation avec un lien personnalisé afin de finaliser le formulaire d’inscription.</p>
+                    <p>Nous ne gardons dans nos bases de données aucune donnée renseignée pour ces personnes tant qu’elles n’ont pas finalisé leur inscription. Les informations renseignées permettent de générer le lien personnalisé.</p>
+                <% else_if $Up.Completed %>
                     <% if $remainingSeats %>
                         <p>Votre demande d’inscription a bien été prise en compte. Vous allez recevoir un mail récapitulatif de votre inscription.</p>
                         <% if not $Up.IsGuest %>
+
                             $Up.Form
                         <% end_if %>
                     <% else %>
