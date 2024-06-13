@@ -2,10 +2,25 @@
     <% include HeroSection BackgroundImageLink=$Image.Link, MeetingSection=true %>
     <div class="d-flex flex-column flex-md-row me-0 px-5 px-md-9 justify-content-between">
         <aside class="col-sm-12 col-md-4 col-xl-3 order-md-2 bg-white my-5 sticky-md-top p-4" style="height:fit-content;top: 120px;">
-            <h2>S’inscrire à la conférence</h2>
+            <% if not $Up.HideAsideHeader %>
+                <h2>
+                    <% if $remainingSeats %>
+                        S’inscrire à la conférence
+                    <% else %>
+                        S’inscrire sur la liste d’attente
+                    <% end_if %>
+                </h2>
+            <% end_if %>
             <div>
                 <% if $Up.Completed %>
-                    <p>Votre demande d’inscription a bien été prise en compte. Vous allez recevoir un mail récapitulatif de votre inscription.</p>
+                    <% if $remainingSeats %>
+                        <p>Votre demande d’inscription a bien été prise en compte. Vous allez recevoir un mail récapitulatif de votre inscription.</p>
+                        <% if not $Up.IsGuest %>
+                            $Up.Form
+                        <% end_if %>
+                    <% else %>
+                        <p>Votre demande d’inscription à la liste d'attente a bien été prise en compte. Vous allez recevoir un mail récapitulatif de votre demande d'inscription.</p>
+                    <% end_if %>
                 <% else_if $Up.Form %>
                     $Up.Form
                 <% end_if %>
