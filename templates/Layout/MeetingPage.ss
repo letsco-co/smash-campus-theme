@@ -8,18 +8,14 @@
         </aside>
         <section class="col-sm-12 col-md-7 order-md-1">
             <% if $Description %>
-                <% include WhiteBlock Title="Présantation", Data=$Description, ID='Description' %>
+                <% include WhiteBlock Title="Présentation", Data=$Description, ID='Description' %>
             <% end_if %>
             <% if $Programs %>
                 <% include ProgramWhiteblock Title="Programme", ID='Program' %>
             <% end_if %>
             <div class="bg-white py-4 ps-4 pe-5 my-5 training-info-card">
                 <h2 class="toggle-header">
-                    <a class="d-flex align-items-center text-dark link-underline link-underline-opacity-0" data-bs-toggle="collapse" href="#Speakers" role="button" aria-expanded="false" aria-controls="Speakers" onclick="this.classList.toggle('toggle-style')">
-                        <img class="me-4" src="$resourceURL('themes/smash-campus/images/list_style.png')">
-                        Intervenants
-                        <img class="ms-4" src="$resourceURL('themes/smash-campus/images/list_style.png')">
-                    </a>
+                    <% include ToogleTitle ID='Speakers', Title='Intervenants' %>
                 </h2>
                 <div id="Speakers" class="pe-5 mt-5 collapse show">
                     <div id="glideSpeakers" class="glide px-5 px-md-9 py-4">

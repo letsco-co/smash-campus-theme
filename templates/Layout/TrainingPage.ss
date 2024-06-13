@@ -42,7 +42,7 @@
                 <% include WhiteBlock Title="Suivi de l'execution", ShouldLoop=true, Data=$ExecutionMonitorings, ID='ExecutionMonitorings' %>
             <% end_if %>
             <% if $Programs %>
-                <% include WhiteBlock Title="Programme", ShouldLoop=true, Data=$Programs, ID='Programs' %>
+                <% include ProgramWhiteblock Title="Programme", ShouldLoop=true, Data=$Programs, ID='Programs' %>
             <% end_if %>
             <% if $Accessibility %>
                 <% include WhiteBlock Title="Accessibilité", Data=$Accessibility, ID='Accessibility' %>

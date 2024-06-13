@@ -144,15 +144,15 @@ aside.sticky-md-top {
 .toggle-header > a > img {
     transition: 0.2s ease-in-out;
 }
-.toggle-header > a > img:first-child {
+.toggle-header > a > img:first-child, .toggle-header-close > a.toggle-style > img:first-child {
     transform: rotate(90deg);
 }
-.toggle-header > a > img:last-child {
+.toggle-header > a > img:last-child, .toggle-header-close > a.toggle-style > img:last-child {
     transform: rotate(-270deg);
 }
-.toggle-header > a.toggle-style > img:first-child {
+.toggle-header > a.toggle-style > img:first-child, .toggle-header-close > a > img:first-child {
     transform: rotate(0deg);
 }
-.toggle-header > a.toggle-style > img:last-child {
+.toggle-header > a.toggle-style > img:last-child, .toggle-header-close > a > img:last-child {
     transform: rotate(-180deg);
 }
