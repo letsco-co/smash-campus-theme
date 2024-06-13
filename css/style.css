@@ -128,3 +128,10 @@ aside.sticky-md-top {
     height: 90px;
     object-fit: cover;
 }
+.glide .glide__slides {
+    align-items: center;
+}
+.glide .glide__slide > img {
+    width: 100%;
+    height: auto;
+}
