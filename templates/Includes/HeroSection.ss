@@ -16,7 +16,7 @@
     <% if $TrainingSection %>
         <% include TrainingHeroSection %>
     <% end_if %>
-    <% if $MeetingHolderSection %>
-        <% include MeetingHolderHeroSection %>
+    <% if $MeetingSection %>
+        <% include MeetingHeroSection %>
     <% end_if %>
 </section>
