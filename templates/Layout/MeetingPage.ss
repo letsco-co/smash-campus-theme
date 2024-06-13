@@ -11,7 +11,7 @@
                 <% include WhiteBlock Title="Présantation", Data=$Description, ID='Description' %>
             <% end_if %>
             <% if $Programs %>
-                <% include WhiteBlock Title="Programme", ShouldLoop=true, Data=$Programs, ID='Program' %>
+                <% include ProgramWhiteblock Title="Programme", ID='Program' %>
             <% end_if %>
             <div class="bg-white py-4 ps-4 pe-5 my-5 training-info-card">
                 <h2 class="toggle-header">
