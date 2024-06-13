@@ -3,8 +3,8 @@
         <h3>$Title</h3>
         $Image
     </div>
-    <div class="d-flex justify-content-around gap-3 pt-4">
-        <div class="flex-grow-1">
+    <div class="d-flex justify-content-between gap-3 pt-4">
+        <div style="max-width: 220px;">
             <p>$Description.Summary(10)</p>
             <a href="$Link" class="bg-primary bg-secondary-hover rounded-1 text-black p-2 link-offset-2 link-underline link-underline-opacity-0">Voir la formation</a>
         </div>
