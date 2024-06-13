@@ -21,34 +21,34 @@
         </aside>
         <section class="col-sm-12 col-md-7 order-md-1">
             <% if $Prerequisites %>
-                <% include WhiteBlock Title="Pré-requis", ShouldLoop=true, Data=$Prerequisites %>
+                <% include WhiteBlock Title="Pré-requis", ShouldLoop=true, Data=$Prerequisites, ID='Prereauisites' %>
             <% end_if %>
             <% if $Goals %>
-                <% include WhiteBlock Title="Objectifs", Data=$Goals %>
+                <% include WhiteBlock Title="Objectifs", Data=$Goals, ID='Goals' %>
             <% end_if %>
             <% if $Publics %>
-                <% include WhiteBlock Title="Public concerné", ShouldLoop=true, Data=$Publics %>
+                <% include WhiteBlock Title="Public concerné", ShouldLoop=true, Data=$Publics, ID='Publics' %>
             <% end_if %>
             <% if $Modalities %>
-                <% include WhiteBlock Title="Modalités et délais d'accès", Data=$Modalities %>
+                <% include WhiteBlock Title="Modalités et délais d'accès", Data=$Modalities, ID='Modalities' %>
             <% end_if %>
             <% if $EducationalMeans %>
-                <% include WhiteBlock Title="Moyens pédagogiques", ShouldLoop=true, Data=$EducationalMeans %>
+                <% include WhiteBlock Title="Moyens pédagogiques", ShouldLoop=true, Data=$EducationalMeans, ID='EducationalMeans' %>
             <% end_if %>
             <% if $EvaluationMethods %>
-                <% include WhiteBlock Title="Modalités d'évaluations", ShouldLoop=true, Data=$EvaluationMethods %>
+                <% include WhiteBlock Title="Modalités d'évaluations", ShouldLoop=true, Data=$EvaluationMethods, ID='EvaluationMethods' %>
             <% end_if %>
             <% if $ExecutionMonitorings %>
-                <% include WhiteBlock Title="Suivi de l'execution", ShouldLoop=true, Data=$ExecutionMonitorings %>
+                <% include WhiteBlock Title="Suivi de l'execution", ShouldLoop=true, Data=$ExecutionMonitorings, ID='ExecutionMonitorings' %>
             <% end_if %>
             <% if $Programs %>
-                <% include WhiteBlock Title="Programme", ShouldLoop=true, Data=$Programs %>
+                <% include WhiteBlock Title="Programme", ShouldLoop=true, Data=$Programs, ID='Programs' %>
             <% end_if %>
             <% if $Accessibility %>
-                <% include WhiteBlock Title="Accessibilité", Data=$Accessibility %>
+                <% include WhiteBlock Title="Accessibilité", Data=$Accessibility, ID='Accessibility' %>
             <% end_if %>
             <% if $Financing %>
-                <% include WhiteBlock Title="Financement", Data=$Financing %>
+                <% include WhiteBlock Title="Financement", Data=$Financing, ID='Financing' %>
             <% end_if %>
         </section>
     </div>

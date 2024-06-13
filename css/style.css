@@ -141,3 +141,18 @@ aside.sticky-md-top {
     height: 170px;
     object-fit: cover;
 }
+h2.toggle-header > a > img {
+    transition: 0.2s ease-in-out;
+}
+h2.toggle-header > a > img:first-child {
+    transform: rotate(90deg);
+}
+h2.toggle-header > a > img:last-child {
+    transform: rotate(-270deg);
+}
+h2.toggle-header > a.toggle-style > img:first-child {
+    transform: rotate(0deg);
+}
+h2.toggle-header > a.toggle-style > img:last-child {
+    transform: rotate(-180deg);
+}
