@@ -156,3 +156,9 @@ aside.sticky-md-top {
 .toggle-header > a.toggle-style > img:last-child, .toggle-header-close > a > img:last-child {
     transform: rotate(-180deg);
 }
+
+/* Elementals */
+.letsco__elements__contentblock img {
+    width: 100%;
+    height: auto;
+}
