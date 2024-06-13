@@ -10,10 +10,13 @@
     <% if $TrainingsSection %>
         <% include TrainingsHeroSection %>
     <% end_if %>
-    <% if $DomainSection %>
-        <% include DomainHeroSection %>
+    <% if $PageSection %>
+        <% include PageHeroSection %>
     <% end_if %>
     <% if $TrainingSection %>
         <% include TrainingHeroSection %>
+    <% end_if %>
+    <% if $MeetingHolderSection %>
+        <% include MeetingHolderHeroSection %>
     <% end_if %>
 </section>
