@@ -162,3 +162,9 @@ aside.sticky-md-top {
     width: 100%;
     height: auto;
 }
+
+.letsco__elements__imageblock img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
