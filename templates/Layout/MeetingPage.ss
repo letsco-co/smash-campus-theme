@@ -4,7 +4,9 @@
         <aside class="col-sm-12 col-md-4 col-xl-3 order-md-2 bg-white my-5 sticky-md-top p-4" style="height:fit-content;top: 120px;">
             <h2>S’inscrire à la conférence</h2>
             <div>
-                <% if $Up.Form %>
+                <% if $Up.Completed %>
+                    <p>Votre demande d’inscription a bien été prise en compte. Vous allez recevoir un mail récapitulatif de votre inscription.</p>
+                <% else_if $Up.Form %>
                     $Up.Form
                 <% end_if %>
             </div>
