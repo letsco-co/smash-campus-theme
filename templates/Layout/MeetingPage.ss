@@ -13,6 +13,9 @@
             <% if $Programs %>
                 <% include WhiteBlock Title="Programme", ShouldLoop=true, Data=$Programs %>
             <% end_if %>
+            <% if $Documents %>
+                <% include LinkWhiteBlock Title="Document", ShouldLoop=true, Data=$Documents %>
+            <% end_if %>
         </section>
     </div>
 <% end_with %>
