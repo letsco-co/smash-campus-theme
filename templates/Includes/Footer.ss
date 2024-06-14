@@ -53,6 +53,7 @@
             </div>
             <div class="col-11 col-md-4 py-sm-3">
                 <p class="h3">Inscrivez-vous à la newsletter</p>
+                $NewsletterForm
                 <p class="h3">rejoignez-nous</p>
                 <% if $SiteConfig.LinkedInLink %>
                     <a href="$SiteConfig.LinkedInLink">
