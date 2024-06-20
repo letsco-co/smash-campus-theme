@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url('../webfonts/Avenir-Roman.eot');
+    src: url('../webfonts/Avenir-Roman.eot?#iefix') format('embedded-opentype'), url('../webfonts/Avenir-Roman.woff') format('woff'), url('../webfonts/Avenir-Roman.ttf') format('truetype'), url('../webfonts/Avenir-Roman.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Avenir';
+    src: url('../webfonts/Avenir-Heavy.eot');
+    src: url('../webfonts/Avenir-Heavy.eot?#iefix') format('embedded-opentype'), url('../webfonts/Avenir-Heavy.woff') format('woff'), url('../webfonts/Avenir-Heavy.ttf') format('truetype'), url('../webfonts/Avenir-Heavy.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
