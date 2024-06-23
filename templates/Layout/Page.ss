@@ -1,4 +1,1 @@
-<div class="content-container">
-    <h1>$Title</h1>
-    <div class="content">$Content</div>
-</div>
+<% include HeroSection PageSection=true, BackgroundImageLink=$resourceURL('themes/smash-campus/images/default-header-background.webp')%>
