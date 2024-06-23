@@ -23,8 +23,8 @@
             <% if $Prerequisites %>
                 <% include WhiteBlock Title="Pré-requis", ShouldLoop=true, Data=$Prerequisites, ID='Prereauisites' %>
             <% end_if %>
-            <% if $Goals %>
-                <% include WhiteBlock Title="Objectifs", Data=$Goals, ID='Goals' %>
+            <% if $Description %>
+                <% include WhiteBlock Title="Objectifs", Data=$Description, ID='Description' %>
             <% end_if %>
             <% if $Publics %>
                 <% include WhiteBlock Title="Public concerné", ShouldLoop=true, Data=$Publics, ID='Publics' %>

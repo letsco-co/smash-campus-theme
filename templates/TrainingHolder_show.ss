@@ -19,8 +19,8 @@
             <% if $Prerequisites %>
             <% include WhiteBlock Title="Pré-requis", ShouldLoop=true, Data=$Prerequisites %>
             <% end_if %>
-            <% if $Goals %>
-            <% include WhiteBlock Title="Objectifs", Data=$Goals %>
+            <% if $Description %>
+            <% include WhiteBlock Title="Objectifs", Data=$Description %>
             <% end_if %>
             <% if $Publics %>
                 <% include WhiteBlock Title="Public concerné", ShouldLoop=true, Data=$Publics %>
