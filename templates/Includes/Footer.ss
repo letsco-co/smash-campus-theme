@@ -2,7 +2,7 @@
     <div>
         <div class="row justify-content-center align-items-md-start">
             <div class="col-11 col-md-4 py-sm-3">
-                <p class="h3">Informations pratiques</p>
+                <p class="h3"><%t Page.Infos 'Practical informations' %></p>
                 <ul class="list-group list-group-flush bg-transparent">
                     <li class="list-group-item bg-transparent border-0 ps-0">
                         <a class="text-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#">Nous connaître</a>
@@ -19,7 +19,7 @@
                 </ul>
             </div>
             <div class="col-11 col-md-4 py-sm-3">
-                <p class="h3">Restons en contact</p>
+                <p class="h3"><%t Page.Contact "Let's stay in touch" %></p>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item bg-transparent border-0 ps-0">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left-text" viewBox="0 0 16 16">
@@ -52,9 +52,9 @@
                 </ul>
             </div>
             <div class="col-11 col-md-4 py-sm-3">
-                <p class="h3">Inscrivez-vous à la newsletter</p>
+                <p class="h3"><%t Page.Newsletter "Subscribe to the newsletter" %></p>
                 $NewsletterForm
-                <p class="h3">rejoignez-nous</p>
+                <p class="h3"><%t Page.RS "Follow us" %></p>
                 <% if $SiteConfig.LinkedInLink %>
                     <a href="$SiteConfig.LinkedInLink">
                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="black" class="bi bi-linkedin" viewBox="0 0 16 16">
@@ -68,7 +68,7 @@
             <img class="col-11 col-md-6 col-lg-3" src="$resourceURL('themes/smash-campus/images/qualiopi.png')" alt="Qualiopi processus certifié, La certification Qualiopi a été délivrée au titre des categories d'actions suivantes: actions de formations; actions permettant de valider les acquis de l'expérience. République française">
         </div>
         <div class="row justify-content-center py-3 text-center delimiter delimiter-center">
-            <p class="col-11 mb-0">@$getCurrentYear SMASH Campus | Conçu et réalisé par <a class="link-dark" href="https://letsco.co" target="_blank">Let’s Co</a></p>
+            <p class="col-11 mb-0">@$getCurrentYear $SiteConfig.Title | <%t Page.Creator "Designed and produced by" %> <a class="link-dark" href="https://letsco.co" target="_blank">Let’s Co</a></p>
         </div>
     </div>
 </footer>

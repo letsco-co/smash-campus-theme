@@ -12,7 +12,7 @@
         <% if $FirstLast %> $FirstLast<% end_if %>
         <% if $ExtraClasses %> $ExtraClasses<% end_if %>"
         style="height: 30px;">
-            Invité $Pos
+            <%t LetsCo\Model\Meeting\Meeting.Guest "Guest" %> $Pos
         </li>
     <% end_loop %>
 </ul>

@@ -4,43 +4,22 @@
         <aside class="col-sm-12 col-md-4 col-xl-3 order-md-2 bg-white my-5 sticky-md-top p-4" style="height:fit-content;top: 120px;">
             <% if not $Up.HideAsideHeader %>
                 <h2>
-                    <% if not $isTodayOrFuture %>
-                        (re)vivez la conférence
-                    <% else_if $remainingSeats %>
-                        S’inscrire à la conférence
-                    <% else %>
-                        S’inscrire sur la liste d’attente
-                    <% end_if %>
+                    $getAsideTitle
                 </h2>
             <% end_if %>
             <div>
-                <% if $isTodayOrFuture %>
-                    <% if $Up.ShowFormIndicators %>
-                        <% with $Up.Form  %>
-                            <% include MultiFormProgressGuests %>
-                        <% end_with %>
-                    <% end_if %>
-                    <% if $Up.InvitationCompleted %>
-                        <p>Vos invitations ont bien été prises en compte. Chacune de ces personnes recevront un mail d’invitation avec un lien personnalisé afin de finaliser le formulaire d’inscription.</p>
-                        <p>Nous ne gardons dans nos bases de données aucune donnée renseignée pour ces personnes tant qu’elles n’ont pas finalisé leur inscription. Les informations renseignées permettent de générer le lien personnalisé.</p>
-                    <% else_if $Up.Completed %>
-                        <% if $remainingSeats %>
-                            <p>Votre demande d’inscription a bien été prise en compte. Vous allez recevoir un mail récapitulatif de votre inscription.</p>
-                            <% if not $Up.IsGuest %>
-
-                                $Up.Form
-                            <% end_if %>
-                        <% else %>
-                            <p>Votre demande d’inscription à la liste d'attente a bien été prise en compte. Vous allez recevoir un mail récapitulatif de votre demande d'inscription.</p>
-                        <% end_if %>
-                    <% else_if $Up.Form %>
-                        $Up.Form
-                    <% end_if %>
-                <% else %>
-                    <p>La conférence s’est déroulée avec succès. Merci à tous les participants d’avoir été présents et d’avoir participé avec enthousiasme.
-                        Vous pouvez dorénavant retrouver les documents et photos de la conférence.</p>
-                    <p>Inscrivez-vous à la Newsletter afin d’être notifié des prochaines conférences</p>
-                    $Up.Newsletter
+                <% if $Up.ShowFormIndicators %>
+                    <% with $Up.Form  %>
+                        <% include MultiFormProgressGuests %>
+                    <% end_with %>
+                <% end_if %>
+                <% if $getAsideText($Up.CompletionStep) %>
+                    <% loop $getAsideText($Up.CompletionStep) %>
+                        <p>$Title</p>
+                    <% end_loop %>
+                <% end_if %>
+                <% if $Up.Form %>
+                    $Up.Form
                 <% end_if %>
             </div>
         </aside>

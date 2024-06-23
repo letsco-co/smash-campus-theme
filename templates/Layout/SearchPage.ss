@@ -20,7 +20,7 @@
     </div>
     <div class="dropdown-center d-block d-md-none">
         <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Domaines
+            <%t LetsCo\Model\Training\TrainingCategory.PLURALNAME 'Domains' %>
         </button>
         <ul class="dropdown-menu bg-white">
             <% loop $Categories %>
@@ -39,7 +39,7 @@
 <% include TrainingCardHolder Heading2=$Heading %>
 <% if $NoTraining %>
     <section class="p-3 p-md-10 mb-2 bg-white">
-        <h2>la formation que vous cherchez n’est pas présente ?</h2>
+        <h2>La formation que vous cherchez n’est pas présente ?</h2>
         $TrainingOfferForm
     </section>
 <% end_if %>

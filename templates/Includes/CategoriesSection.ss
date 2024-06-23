@@ -1,5 +1,5 @@
 <section class="bg-primary px-3 px-md-10 py-5" style="--bs-bg-opacity: .1;">
-    <h2 class="my-5">Découvrez nos autres domaines de formations</h2>
+    <h2 class="my-5"><%t LetsCo\Model\Training\TrainingCategory.OtherDomains 'Discover our other domains' %></h2>
     <% if $otherDomains() %>
         <div class="d-flex flex-wrap gap-3 mb-5">
             <% loop $otherDomains() %>
