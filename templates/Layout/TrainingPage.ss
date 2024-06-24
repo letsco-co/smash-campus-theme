@@ -21,34 +21,34 @@
         </aside>
         <section class="col-sm-12 col-md-7 order-md-1">
             <% if $Prerequisites %>
-                <% include WhiteBlock Title="Pré-requis", ShouldLoop=true, Data=$Prerequisites, ID='Prereauisites' %>
+                <% include WhiteBlock Title=$translatedTitle($ClassName, "Prerequisites"), ShouldLoop=true, Data=$Prerequisites, ID='Prereauisites' %>
             <% end_if %>
             <% if $Description %>
-                <% include WhiteBlock Title="Objectifs", Data=$Description, ID='Description' %>
+                <% include WhiteBlock Title=$translatedTitle($ClassName, "Description"), Data=$Description, ID='Description' %>
             <% end_if %>
             <% if $Publics %>
-                <% include WhiteBlock Title="Public concerné", ShouldLoop=true, Data=$Publics, ID='Publics' %>
+                <% include WhiteBlock Title=$translatedTitle($ClassName, $translatedTitle($ClassName, "Publics")), ShouldLoop=true, Data=$Publics, ID='Publics' %>
             <% end_if %>
             <% if $Modalities %>
-                <% include WhiteBlock Title="Modalités et délais d'accès", Data=$Modalities, ID='Modalities' %>
+                <% include WhiteBlock Title=$translatedTitle($ClassName, "Modalities"), Data=$Modalities, ID='Modalities' %>
             <% end_if %>
             <% if $EducationalMeans %>
-                <% include WhiteBlock Title="Moyens pédagogiques", ShouldLoop=true, Data=$EducationalMeans, ID='EducationalMeans' %>
+                <% include WhiteBlock Title=$translatedTitle($ClassName, "EducationalMeans"), ShouldLoop=true, Data=$EducationalMeans, ID='EducationalMeans' %>
             <% end_if %>
             <% if $EvaluationMethods %>
-                <% include WhiteBlock Title="Modalités d'évaluations", ShouldLoop=true, Data=$EvaluationMethods, ID='EvaluationMethods' %>
+                <% include WhiteBlock Title=$translatedTitle($ClassName, "EvaluationMethods"), ShouldLoop=true, Data=$EvaluationMethods, ID='EvaluationMethods' %>
             <% end_if %>
             <% if $ExecutionMonitorings %>
-                <% include WhiteBlock Title="Suivi de l'execution", ShouldLoop=true, Data=$ExecutionMonitorings, ID='ExecutionMonitorings' %>
+                <% include WhiteBlock Title=$translatedTitle($ClassName, "ExecutionMonitorings"), ShouldLoop=true, Data=$ExecutionMonitorings, ID='ExecutionMonitorings' %>
             <% end_if %>
             <% if $Programs %>
-                <% include ProgramWhiteblock Title="Programme", ShouldLoop=true, Data=$Programs, ID='Programs' %>
+                <% include ProgramWhiteblock Title=$translatedTitle($ClassName, $translatedTitle($ClassName, "Programs")), ShouldLoop=true, Data=$Programs, ID='Programs' %>
             <% end_if %>
             <% if $Accessibility %>
-                <% include WhiteBlock Title="Accessibilité", Data=$Accessibility, ID='Accessibility' %>
+                <% include WhiteBlock Title=$translatedTitle($ClassName, "Accessibility"), Data=$Accessibility, ID='Accessibility' %>
             <% end_if %>
             <% if $Financing %>
-                <% include WhiteBlock Title="Financement", Data=$Financing, ID='Financing' %>
+                <% include WhiteBlock Title=$translatedTitle($ClassName, "Financing"), Data=$Financing, ID='Financing' %>
             <% end_if %>
         </section>
     </div>

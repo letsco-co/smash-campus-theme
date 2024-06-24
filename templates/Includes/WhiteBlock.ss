@@ -1,6 +1,6 @@
 <div class="bg-white py-4 ps-4 pe-5 my-5 training-info-card">
     <h2 class="toggle-header">
-        <% include ToogleTitle ID=$ID, Entity=$Entity%>
+        <% include ToogleTitle ID=$ID, Title=$Title%>
     </h2>
     <div id="$ID" class="pe-5 mt-5 collapse show">
         <% if $ShouldLoop %>

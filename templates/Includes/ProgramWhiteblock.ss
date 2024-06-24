@@ -6,7 +6,7 @@
         <ul>
             <% loop $ProgramNice %>
                 <li class="my-2 toggle-header-close my-4" style="list-style: none">
-                    <% include ToogleTitle ID=$generateURLSegment %>
+                    <% include ToogleTitle ID=$generateURLSegment, Title=$Title %>
                 </li>
                 <% if $Children %>
                     <ul id="$generateURLSegment" class="ms-4 mt-3 collapse">
