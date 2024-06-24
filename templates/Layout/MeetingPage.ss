@@ -25,15 +25,15 @@
         </aside>
         <section class="col-sm-12 col-md-7 order-md-1">
             <% if $Description %>
-                <% include WhiteBlock Title="Présentation", Data=$Description, ID='Description' %>
+                <% include WhiteBlock Entity="Description", Data=$Description, ID='Description' %>
             <% end_if %>
             <% if $Programs %>
-                <% include ProgramWhiteblock Title="Programme", ID='Program' %>
+                <% include ProgramWhiteblock Entity="Programs", ID='Program' %>
             <% end_if %>
             <% if $Speakers %>
                 <div class="bg-white py-4 ps-4 pe-5 my-5 training-info-card">
                     <h2 class="toggle-header">
-                        <% include ToogleTitle ID='Speakers', Title='Intervenants' %>
+                        <% include ToogleTitle ID='Speakers', Entity="Speakers" %>
                     </h2>
                     <div id="Speakers" class="pe-5 mt-5 collapse show">
                         <div id="glideSpeakers" class="glide px-5 px-md-9 py-4">
@@ -67,7 +67,7 @@
                 </div>
             <% end_if %>
             <% if $Documents %>
-                <% include LinkWhiteBlock Title="Documents", ShouldLoop=true, Data=$Documents, ID='Documents' %>
+                <% include LinkWhiteBlock Entity="Documents", ShouldLoop=true, Data=$Documents, ID='Documents' %>
             <% end_if %>
 
         </section>
