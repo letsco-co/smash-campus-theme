@@ -4,7 +4,7 @@
         <aside class="col-sm-12 col-md-4 col-xl-3 order-md-2 bg-white my-5 sticky-md-top p-4" style="height:fit-content;top: 120px;">
             <% if not $Up.HideAsideHeader %>
                 <h2>
-                    $getAsideTitle
+                    $getAsideTitle($Up.CompletionStep)
                 </h2>
             <% end_if %>
             <div>
