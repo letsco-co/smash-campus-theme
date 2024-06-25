@@ -14,7 +14,7 @@
                             $Title
                         </h2>
                     <% end_if %>
-                    <% if not $Content && not $Link %>
+                    <% if $Content || $Link %>
                         <div class="pe-5 mt-5 d-flex flex-column">
                             <% if $Content %>
                                 <p>$Content</p>
