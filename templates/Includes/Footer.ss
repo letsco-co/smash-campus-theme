@@ -1,23 +1,18 @@
 <footer class="py-5 px-3 px-md-10 gradient">
     <div>
         <div class="row justify-content-center align-items-md-start">
-            <div class="col-11 col-md-4 py-sm-3">
-                <p class="h3"><%t Page.Infos 'Practical informations' %></p>
-                <ul class="list-group list-group-flush bg-transparent">
-                    <li class="list-group-item bg-transparent border-0 ps-0">
-                        <a class="text-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#">Nous connaître</a>
-                    </li>
-                    <li class="list-group-item bg-transparent border-0 ps-0">
-                        <a class="text-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#">Mentions légales</a>
-                    </li>
-                    <li class="list-group-item bg-transparent border-0 ps-0">
-                        <a class="text-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#">Conditions d'utilisation</a>
-                    </li>
-                    <li class="list-group-item bg-transparent border-0 ps-0">
-                        <a class="text-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#">Crédits images</a>
-                    </li>
-                </ul>
-            </div>
+            <% if $FooterMenu %>
+                <div class="col-11 col-md-4 py-sm-3">
+                    <p class="h3"><%t Page.Infos 'Practical informations' %></p>
+                    <ul class="list-group list-group-flush bg-transparent">
+                        <% loop FooterMenu %>
+                            <li class="list-group-item bg-transparent border-0 ps-0">
+                                <a class="text-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="$Link">$Title</a>
+                            </li>
+                        <% end_loop %>
+                    </ul>
+                </div>
+            <% end_if %>
             <div class="col-11 col-md-4 py-sm-3">
                 <p class="h3"><%t Page.Contact "Let's stay in touch" %></p>
                 <ul class="list-group list-group-flush">
