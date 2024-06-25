@@ -13,7 +13,7 @@
                         <li class="nav-item mx-2 <% if $Children %>dropdown<% end_if %>">
                             <a class="
                                 <% if $LinkingMode == "current" %>active<% end_if %>
-                                <% if $FirstLast == "last" %>bg-primary rounded-1 text-black bg-secondary-hover<% end_if %>
+                                <% if $IsContactPage %>bg-primary rounded-1 text-black bg-secondary-hover<% end_if %>
                                 px-2 nav-link
                                 <% if $Children %>dropdown-toggle<% end_if %>
                                 "
