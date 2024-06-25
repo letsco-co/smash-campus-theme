@@ -166,3 +166,14 @@ aside.sticky-md-top {
     max-height: 400px;
     object-fit: cover;
 }
+
+
+/* Honeypot Spam protection cause css not working */
+.field.hpsp, .field.hpsp .field {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
