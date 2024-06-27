@@ -6,9 +6,9 @@
             <% end_if %>
             $Content
         </div>
-        <div class="p-6 col-12 <% if $OnRight %>col-md-5<% end_if %> row gap-3">
+        <div class="p-6 col-12 <% if $OnRight %>col-md-5<% end_if %> row gap-3 d-flex justify-content-between">
             <% loop $Blocks %>
-                <div class="bg-white py-4 ps-4 pe-2 my-5 training-info-card col-12 col-md-5 col-xl-3">
+                <div class="bg-white py-4 ps-4 pe-2 my-5 training-info-card">
                     <% if $Title %>
                         <h2>
                             $Title

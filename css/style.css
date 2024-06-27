@@ -71,6 +71,8 @@ aside.sticky-md-top {
 }
 .training-info-card {
     position: relative;
+    width: 24% !important;
+    min-width: 335px;
 }
 .training-info-card:before {
     content: "";
