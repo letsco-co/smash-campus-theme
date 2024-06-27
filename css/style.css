@@ -71,8 +71,6 @@ aside.sticky-md-top {
 }
 .training-info-card {
     position: relative;
-    width: 24% !important;
-    min-width: 335px;
 }
 .training-info-card:before {
     content: "";
@@ -169,6 +167,10 @@ aside.sticky-md-top {
     object-fit: cover;
 }
 
+.text-white-block .training-info-card {
+    width: 24% !important;
+    min-width: 335px;
+}
 
 /* Honeypot Spam protection cause css not working */
 .field.hpsp, .field.hpsp .field {
