@@ -9,6 +9,9 @@ h2,.h2 {
     font-size: 1.8rem;
 }
 /* Custom CSS*/
+header .nav-link.active {
+    text-decoration: underline;
+}
 aside.sticky-md-top {
     z-index: 1015 !important;
 }
