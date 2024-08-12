@@ -2,7 +2,7 @@
     <% if $ShowTitle %>
         <h2>$Title</h2>
     <% end_if %>
-    <div class="row align-items-center justify-content-between">
+    <div class="row align-items-center">
         <div class="d-flex flex-column col-12 col-md-6">
             $Content
             <div class="mt-4">
@@ -20,7 +20,7 @@
                 <% end_with %>
             </div>
         </div>
-        <div class="<% if $Image.getExtension == 'png' %>bg-white rounded-2<% end_if %> p-6 col-12 col-md-5">
+        <div class="<% if $Image.getExtension == 'png' %>bg-white rounded-2<% end_if %> p-6 col-12 col-md-4 offset-md-1">
             $Image
         </div>
     </div>
