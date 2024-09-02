@@ -216,3 +216,27 @@ aside.sticky-md-top {
     position: relative;
     top: 0.15em;
 }
+
+/* Contact us form */
+.UserDefinedForm form.userform div.userform-fields div.field {
+    text-align: center;
+}
+.UserDefinedForm form.userform div.userform-fields div.field input {
+    width: 25%;
+    min-width: 300px;
+}
+.UserDefinedForm nav.Actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.UserDefinedForm nav.Actions input {
+    background: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.UserDefinedForm nav.Actions input:hover {
+    background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;
+}
