@@ -12,6 +12,9 @@ li, a {
     line-height: 1rem;
 }
 /* Custom CSS*/
+header .navbar-brand img {
+    height: 60px;
+}
 header .nav-link.active {
     text-decoration: underline;
 }
@@ -19,7 +22,7 @@ aside.sticky-md-top {
     z-index: 1015 !important;
 }
 .gradient {
-    background: linear-gradient(180deg, rgba(141,220,191,1) 0%, rgba(27,173,202,1) 100%);
+    background: #47BCC6;
 }
 
 .delimiter, .delimiter-bottom {

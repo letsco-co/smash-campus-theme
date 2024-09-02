@@ -12,6 +12,7 @@
     <% require themedCSS('custom') %>
     <% require themedCSS('style') %>
     <% require themedCSS('typography') %>
+    <link rel="shortcut icon" href="$resourceURL('themes/smash-campus/images/favicon.ico')" />
 </head>
 <body class="bg-light $ClassName.ShortName<% if not $Menu(2) %> no-sidebar<% end_if %>" <% if $i18nScriptDirection %>dir="$i18nScriptDirection"<% end_if %>>
 <% include Header %>
