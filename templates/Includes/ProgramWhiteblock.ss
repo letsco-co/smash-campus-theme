@@ -20,5 +20,4 @@
             <% end_loop %>
         </ul>
     </div>
-    <span class="horizontal-ornement"></span>
 </div>

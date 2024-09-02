@@ -29,15 +29,15 @@ aside.sticky-md-top {
     position: relative;
 }
 
-.delimiter:before, .delimiter-bottom:before {
-    content: "";
-    background-image: url('../images/arrow.png');
-    width: 91.5%;
-    height: 12px;
-    background-repeat: no-repeat;
-    background-position-x: right;
-    position: absolute;
-}
+/*.delimiter:before, .delimiter-bottom:before {*/
+/*    content: "";*/
+/*    background-image: url('../images/arrow.png');*/
+/*    width: 91.5%;*/
+/*    height: 12px;*/
+/*    background-repeat: no-repeat;*/
+/*    background-position-x: right;*/
+/*    position: absolute;*/
+/*}*/
 
 .delimiter:after, .delimiter-bottom:after {
     content: "";
@@ -76,53 +76,53 @@ aside.sticky-md-top {
     width: 615px;
 }
 .training-info-card ul > li {
-    list-style-image: url("../images/list_style.png");
+    list-style: disc;
 }
 .training-info-card {
     position: relative;
 }
-.training-info-card:before {
-    content: "";
-    background-image: url('../images/arrow-up.png');
-    width: 12px;
-    height: 85%;
-    background-repeat: no-repeat;
-    background-position-x: right;
-    position: absolute;
-    left: -5px;
-    bottom: 5px;
-}
-.training-info-card:after {
-    content: "";
-    background: black;
-    width: 1px;
-    height: 85%;
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-}
-.training-info-card span.horizontal-ornement:after {
-    content: "";
-    display: block;
-    height: 1px;
-    width: 80%;
-    background: black;
-    position: absolute;
-    bottom: 0;
-    left: -5px;
-}
-.training-info-card span.horizontal-ornement:before {
-    content: "";
-    background-image: url('../images/arrow.png');
-    height: 12px;
-    background-repeat: no-repeat;
-    background-position-x: right;
-    display: block;
-    position: absolute;
-    width: 16px;
-    bottom: -5px;
-    right: 19.5%;
-}
+/*.training-info-card:before {*/
+/*    content: "";*/
+/*    background-image: url('../images/arrow-up.png');*/
+/*    width: 12px;*/
+/*    height: 85%;*/
+/*    background-repeat: no-repeat;*/
+/*    background-position-x: right;*/
+/*    position: absolute;*/
+/*    left: -5px;*/
+/*    bottom: 5px;*/
+/*}*/
+/*.training-info-card:after {*/
+/*    content: "";*/
+/*    background: black;*/
+/*    width: 1px;*/
+/*    height: 85%;*/
+/*    position: absolute;*/
+/*    bottom: -5px;*/
+/*    left: 0;*/
+/*}*/
+/*.training-info-card span.horizontal-ornement:after {*/
+/*    content: "";*/
+/*    display: block;*/
+/*    height: 1px;*/
+/*    width: 80%;*/
+/*    background: black;*/
+/*    position: absolute;*/
+/*    bottom: 0;*/
+/*    left: -5px;*/
+/*}*/
+/*.training-info-card span.horizontal-ornement:before {*/
+/*    content: "";*/
+/*    background-image: url('../images/arrow.png');*/
+/*    height: 12px;*/
+/*    background-repeat: no-repeat;*/
+/*    background-position-x: right;*/
+/*    display: block;*/
+/*    position: absolute;*/
+/*    width: 16px;*/
+/*    bottom: -5px;*/
+/*    right: 19.5%;*/
+/*}*/
 .stepIndicator li:not(.current) {
     color: var(--bs-secondary-color);
 }
