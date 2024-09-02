@@ -187,3 +187,29 @@ aside.sticky-md-top {
     height: 1px;
     overflow: hidden;
 }
+
+/* scroll to top button */
+#js-scrolltopable {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(0,0,0,0.4);
+    color: white;
+    width: 3rem;
+    height: 3rem;
+    margin: 0.5em;
+    border-radius: 0.25em;
+    cursor: pointer;
+}
+#js-scrolltopable.js-scrolltopable--visible {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#js-scrolltopable > span {
+    font-family: Arial, sans-serif;
+    font-size: 3em;
+    position: relative;
+    top: 0.15em;
+}
