@@ -29,16 +29,6 @@ aside.sticky-md-top {
     position: relative;
 }
 
-/*.delimiter:before, .delimiter-bottom:before {*/
-/*    content: "";*/
-/*    background-image: url('../images/arrow.png');*/
-/*    width: 91.5%;*/
-/*    height: 12px;*/
-/*    background-repeat: no-repeat;*/
-/*    background-position-x: right;*/
-/*    position: absolute;*/
-/*}*/
-
 .delimiter:after, .delimiter-bottom:after {
     content: "";
     background: black;
@@ -81,48 +71,6 @@ aside.sticky-md-top {
 .training-info-card {
     position: relative;
 }
-/*.training-info-card:before {*/
-/*    content: "";*/
-/*    background-image: url('../images/arrow-up.png');*/
-/*    width: 12px;*/
-/*    height: 85%;*/
-/*    background-repeat: no-repeat;*/
-/*    background-position-x: right;*/
-/*    position: absolute;*/
-/*    left: -5px;*/
-/*    bottom: 5px;*/
-/*}*/
-/*.training-info-card:after {*/
-/*    content: "";*/
-/*    background: black;*/
-/*    width: 1px;*/
-/*    height: 85%;*/
-/*    position: absolute;*/
-/*    bottom: -5px;*/
-/*    left: 0;*/
-/*}*/
-/*.training-info-card span.horizontal-ornement:after {*/
-/*    content: "";*/
-/*    display: block;*/
-/*    height: 1px;*/
-/*    width: 80%;*/
-/*    background: black;*/
-/*    position: absolute;*/
-/*    bottom: 0;*/
-/*    left: -5px;*/
-/*}*/
-/*.training-info-card span.horizontal-ornement:before {*/
-/*    content: "";*/
-/*    background-image: url('../images/arrow.png');*/
-/*    height: 12px;*/
-/*    background-repeat: no-repeat;*/
-/*    background-position-x: right;*/
-/*    display: block;*/
-/*    position: absolute;*/
-/*    width: 16px;*/
-/*    bottom: -5px;*/
-/*    right: 19.5%;*/
-/*}*/
 .stepIndicator li:not(.current) {
     color: var(--bs-secondary-color);
 }
@@ -193,28 +141,20 @@ aside.sticky-md-top {
 
 /* scroll to top button */
 #js-scrolltopable {
-    display: none;
-    position: fixed;
     bottom: 20px;
     right: 20px;
-    background: rgba(0,0,0,0.4);
-    color: white;
-    width: 3rem;
-    height: 3rem;
-    margin: 0.5em;
-    border-radius: 0.25em;
-    cursor: pointer;
+    z-index: 100;
 }
 #js-scrolltopable.js-scrolltopable--visible {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 2rem;
+    text-decoration: none;
 }
 #js-scrolltopable > span {
     font-family: Arial, sans-serif;
-    font-size: 3em;
-    position: relative;
-    top: 0.15em;
+    font-size: unset;
 }
 
 /* Contact us form */
