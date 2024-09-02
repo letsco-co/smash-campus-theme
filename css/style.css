@@ -221,7 +221,7 @@ aside.sticky-md-top {
 .UserDefinedForm form.userform div.userform-fields div.field {
     text-align: center;
 }
-.UserDefinedForm form.userform div.userform-fields div.field input {
+.UserDefinedForm form.userform div.userform-fields div.field > div > div > * {
     width: 25%;
     min-width: 300px;
 }
