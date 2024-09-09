@@ -1,6 +1,6 @@
 <style>
     .bg-img-gradient {
-        background: linear-gradient(180deg, rgba(71,188,198,0.85) 0%, rgba(71,188,198,0.85) 100%), url("$BackgroundImageLink");
+        background: url("$BackgroundImageLink");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
