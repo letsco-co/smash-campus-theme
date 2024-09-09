@@ -180,3 +180,7 @@ aside.sticky-md-top {
 .UserDefinedForm nav.Actions input:hover {
     background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;
 }
+/* Domains search */
+.home-hero-section > div:last-child {
+    display: none !important;
+}
