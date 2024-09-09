@@ -13,7 +13,7 @@ li, a {
 }
 /* Custom CSS*/
 header .navbar-brand img {
-    height: 60px;
+    height: 90px;
 }
 header .nav-link.active {
     text-decoration: underline;
