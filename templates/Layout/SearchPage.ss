@@ -32,13 +32,13 @@
     </div>
 </section>
 <% if $NoTraining %>
-    <section class="p-3 p-md-10 mb-2">
+    <section class="p-3 p-md-5 mb-2">
         <p class="h3"><%t LetsCo\Controller\SearchController.NoResult "No result found" %></p>
     </section>
 <% end_if %>
 <% include TrainingCardHolder Heading2=$Heading %>
 <% if $NoTraining %>
-    <section class="p-3 p-md-10 mb-2 bg-white">
+    <section class="p-3 p-md-5 mb-2 bg-white">
         <h2><%t LetsCo\Controller\SearchController.RequestTraining "The training you are looking for is not offered?" %></h2>
         $TrainingOfferForm
     </section>

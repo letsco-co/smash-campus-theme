@@ -1,4 +1,4 @@
-<section class="p-3 p-md-10 mb-2">
+<section class="p-3 p-md-5 mb-2">
     <div class="<% if $OnRight %>row<% end_if %> align-items-center justify-content-between">
         <div class="col-12 <% if $OnRight %>col-md-6<% end_if %>">
             <% if $ShowTitle %>

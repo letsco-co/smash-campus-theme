@@ -1,4 +1,4 @@
-<section class="p-3 p-md-10 mb-2">
+<section class="p-3 p-md-5 mb-2">
     <% if $ShowTitle %>
         <h2>$Title</h2>
     <% end_if %>
