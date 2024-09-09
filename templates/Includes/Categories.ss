@@ -1,4 +1,4 @@
-<div class="d-md-flex flex-wrap d-none gap-3">
+<div class="d-md-flex flex-wrap d-none column-gap-3">
     <% loop $Categories %>
         <a href="$Link" class="bg-white bg-primary-hover text-black p-2 my-2 rounded-2 link-underline-opacity-0 link-offset-2 link-underline">$Title</a>
     <% end_loop %>
