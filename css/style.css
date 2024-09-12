@@ -8,10 +8,10 @@ h3,.h3 {
 h2,.h2 {
     font-size: 1.8rem;
 }
-li, a {
+li.bg-primary, a.bg-primary {
     line-height: 1rem;
 }
-/* Custom CSS*/
+/* Custom CSS */
 header .navbar-brand img {
     height: 90px;
 }
