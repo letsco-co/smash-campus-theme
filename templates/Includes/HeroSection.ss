@@ -6,7 +6,7 @@
         background-size: cover;
     }
 </style>
-<section style="min-height: 435px" class="bg-img-gradient d-flex flex-column justify-content-center p-3 p-md-10 mb-2">
+<section style="min-height: 435px" class="bg-img-gradient d-flex flex-column justify-content-center p-3 p-md-10 mb-2 text-white">
     <% if $TrainingsSection %>
         <% include TrainingsHeroSection %>
     <% end_if %>
