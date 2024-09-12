@@ -8,7 +8,7 @@ h3,.h3 {
 h2,.h2 {
     font-size: 1.8rem;
 }
-li.bg-primary, a.bg-primary {
+li.bg-primary, a.bg-primary, li.nav-item {
     line-height: 1rem;
 }
 /* Custom CSS */
