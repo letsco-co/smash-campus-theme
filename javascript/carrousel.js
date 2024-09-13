@@ -1,6 +1,6 @@
 if (document.querySelector('#glideImages')) {
     new Glide('#glideImages', {
-        type: 'carousel',
+        type: 'slider',
         startAt: 0,
         perView: 3,
         gap: 100,
@@ -11,7 +11,7 @@ if (document.querySelector('#glideImages')) {
 }
 if (document.querySelector('#glideSpeakers')) {
     new Glide('#glideSpeakers', {
-        type: 'carousel',
+        type: 'slider',
         startAt: 0,
         perView: 3,
         gap: 100,
