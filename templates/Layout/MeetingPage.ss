@@ -72,7 +72,7 @@
 
         </section>
     </div>
-    <% if $images %>
+    <% if $Images %>
         <div id="glideImages" class="glide px-5 px-md-9 py-4">
             <div class="glide__track" data-glide-el="track">
                 <ul class="glide__slides">
