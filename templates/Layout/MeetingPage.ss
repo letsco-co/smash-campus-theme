@@ -40,10 +40,12 @@
                             <div class="glide__track" data-glide-el="track">
                                 <ul class="glide__slides">
                                     <% loop $Speakers %>
-                                        <li class="my-2 p-3 speaker-card d-flex flex-column justify-content-evenly align-items-center gap-3" style="list-style: none; width: 220px">
+                                        <li class="my-2 p-3 speaker-card d-flex justify-content-evenly align-items-center gap-3" style="list-style: none; width: 220px">
                                             $Image
-                                            <p class="mb-0">$Title.UpperCase</p>
-                                            <p class="mb-0">$Function</p>
+                                            <div class="d-flex flex-column">
+                                                <p class="mb-0 bold" style="white-space: normal; font-weight: bold;">$Title.UpperCase</p>
+                                                <p class="mb-0" style="white-space: normal;">$Function</p>
+                                            </div>
                                         </li>
                                     <% end_loop %>
                                 </ul>

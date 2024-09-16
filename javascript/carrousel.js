@@ -13,7 +13,7 @@ if (document.querySelector('#glideSpeakers')) {
     new Glide('#glideSpeakers', {
         type: 'slider',
         startAt: 0,
-        perView: 3,
+        perView: 1,
         gap: 100,
         keyboard: true,
         focusAt: 'center',
