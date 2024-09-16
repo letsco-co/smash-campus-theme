@@ -52,7 +52,7 @@
                             </div>
                             <div class="glide__bullets" data-glide-el="controls[nav]">
                                 <% loop $Speakers %>
-                                    <button class="glide__bullet" data-glide-dir="=$Pos"></button>
+                                    <button class="glide__bullet" data-glide-dir="=$Pos(0)"></button>
                                 <% end_loop %>
                             </div>
                             <div class="glide__arrows" data-glide-el="controls">
@@ -85,7 +85,7 @@
             </div>
             <div class="glide__bullets" data-glide-el="controls[nav]">
                 <% loop $Images %>
-                <button class="glide__bullet" data-glide-dir="=$Pos"></button>
+                <button class="glide__bullet" data-glide-dir="=$Pos(0)"></button>
                 <% end_loop %>
             </div>
             <div class="glide__arrows" data-glide-el="controls">
