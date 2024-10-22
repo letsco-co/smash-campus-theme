@@ -1,6 +1,6 @@
 <style>
     .bg-img-gradient {
-        background: linear-gradient(180deg, rgba(141,220,191,0.85) 0%, rgba(27,173,202,0.85) 100%), url("$resourceURL('themes/smash-campus/images/default-header-background.webp')");
+        background: linear-gradient(180deg, rgba(141,220,191,0.85) 0%, rgba(27,173,202,0.85) 100%), url("$resourceURL('themes/smash-campus/images/default-header-background.jpg')");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
