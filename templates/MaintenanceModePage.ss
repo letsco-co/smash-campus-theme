@@ -24,8 +24,10 @@
             }
         </style>
         <section style="height: 100vh" class="bg-img-gradient d-flex flex-column justify-content-center p-3 text-center">
-            <h1>$Title</h1>
-            <p>$Content</p>
+            <div style="width: fit-content;margin: auto;background: white;padding: 50px 100px;border-radius: 5px;">
+                <h1>$Title</h1>
+                <p>$Content</p>
+            </div>
         </section>
     </div>
 </div>
