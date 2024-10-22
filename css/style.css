@@ -189,3 +189,8 @@ aside.sticky-md-top {
 .home-hero-section > div:last-child {
     display: none !important;
 }
+
+/* Border card for new graphical chart */
+.meeting-card, .training-card {
+    border: 1px solid lightgrey;
+}
