@@ -1,6 +1,6 @@
 <div class="bg-white rounded-3 d-flex flex-column py-3 px-5 my-2 me-4 meeting-card">
     <div>
-        <h3>$Title</h3>
+        <h3 style="height: 64px;">$Title</h3>
         $Image
     </div>
     <div class="d-flex justify-content-between gap-3 pt-2">
