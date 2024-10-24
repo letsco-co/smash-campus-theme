@@ -1,7 +1,7 @@
 <div class="bg-white rounded-3 d-flex flex-column py-3 px-5 my-2 me-4 training-card">
     <div class="d-flex flex-column delimiter-bottom">
         <p class="mb-0 text-primary">$Category.Title</p>
-        <p class="my-1 h3" style="height: 43px;">$Title</p>
+        <p class="my-1 h3" style="height: 64px;">$Title</p>
     </div>
     <div class="d-flex flex-column">
         <% include TrainingGeneralInfo %>
